@@ -9,7 +9,7 @@ public class PalidromeApp {
     public static void main(String[] args) throws IOException{
         String value="";
         try{
-            System.out.println("Please enter the line you want to check if it is a Palindrome:");
+            System.out.print("Please enter the line you want to check if it is a Palindrome:");
             Scanner scanner = new Scanner(System.in);
             int line = scanner.nextInt();
             value = Files.readAllLines(Paths.get("temp.txt")).get(line-1);
